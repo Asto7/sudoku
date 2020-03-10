@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solver</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    #button{
+      letter-spacing: 1px;
+      padding: 10px 15px;
+      background-color: white;
+      border-style: solid;
+      font-family: 'Playfair Display',cursive ;
+      font-style: italic;
+      border-width: 1px;
+      border-color: black;
+      color:#B6B6B6;
+      transition: all 1s;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    #button:hover{
+      color:black;
+      border-color: #B6B6B6;
+    }
+    #button:focus{
+      outline: none;
+    }
+      </style>
+</head>
+
+<body>
+
+
+
+<br><br>
+  <div class="container">
+    <table class="striped centered">
+        <tbody>
+
+          <tr>
+            <td><input id="1" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="2" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="3" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="4" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="5" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="6" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="7" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="8" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="9" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="10" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="11" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="12" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="13" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="14" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="15" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="16" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="17" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="18" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="19" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="20" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="21" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="22" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="23" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="24" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="25" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="26" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="27" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="28" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="29" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="30" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="31" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="32" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="33" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="34" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="35" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="36" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="37" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="38" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="39" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="40" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="41" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="42" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="43" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="44" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="45" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="46" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="47" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="48" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="49" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="50" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="51" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="52" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="53" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="54" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="55" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="56" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="57" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="58" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="59" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="60" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="61" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="62" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="63" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="64" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="65" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="66" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="67" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="68" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="69" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="70" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="71" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="72" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+          <tr>
+            <td><input id="73" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="74" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="75" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="76" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="77" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="78" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="79" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="80" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+            <td><input id="81" value="" placeholder="" onfocus="Focus()" onfocusout="FocusOut()" onchange="check()" min="1" max="9" type="number" class="data"></td>
+          </tr>
+        </tbody>
+      </table>
+      <center><button id="button" type="button" onclick="New()" name="button">Neww</button><button id="button" type="button" onclick="eva()" name="button">Compile</button></center>
+
+  </div>
+
+    <script>
+        var  _board = [
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0,0]
+
+];
+
+function Focus(){
+  event.target.parentElement.style.borderColor="blue";
+  event.target.parentElement.style.borderWidth="2px";
+}
+
+function FocusOut(){
+  event.target.parentElement.style.borderColor="";
+  event.target.parentElement.style.borderWidth="";
+}
+function New(){
+  let AB=document.getElementsByClassName('data');
+  let Td=document.getElementsByTagName('td');
+  for(let i=0;i<81;i++){AB[i].value='';Td[i].style.backgroundColor="";}
+  for (let i = 0; i <9 ; i++) {
+    for (var j = 0; j < 9; j++) {
+      _board[i][j]=0;
+    }
+  }
+}
+
+function validate( row, col, k){
+  for (let i = 0; i < 9; i++) {
+      const m = 3 * Math.floor(row / 3) + Math.floor(i / 3);
+      const n = 3 * Math.floor(col / 3) + i % 3;
+      if (_board[row][i] == k || _board[i][col] == k || _board[m][n] == k) {
+        return false;
+      }
+  }
+  return true;
+}
+
+
+function check(){
+  let row=Math.floor((event.target.id-1)/9);
+  let col=Math.floor(event.target.id%9);
+  if(col==0)col=9;
+  col--;
+      if(!validate(row,col,event.target.value))
+        event.target.parentElement.style.backgroundColor="red";
+
+      else{
+        event.target.parentElement.style.backgroundColor="";
+        _board[row][col]=event.target.value;
+      }
+
+    }
+
+
+function eva(){
+  let B=document.getElementsByClassName('data');
+let flag=1;
+  for(let i=0;i<81;i++){
+    if(B[i].parentElement.style.backgroundColor=='red'){flag=0;break;}
+  }
+if(flag){
+  sodokoSolver(_board);
+  for (var i = 0; i < 9; i++) {
+    for (var j = 0; j < 9; j++) {
+        B[i*9+j].value=_board[i][j];
+    }
+  }
+}
+else
+  alert("Can't Form a suduko For the given sets of Input")
+
+
+}
+
+
+function isValid(board, row, col, k) {
+    for (let i = 0; i < 9; i++) {
+        const m = 3 * Math.floor(row / 3) + Math.floor(i / 3);
+        const n = 3 * Math.floor(col / 3) + i % 3;
+        if (board[row][i] == k || board[i][col] == k || board[m][n] == k) {
+          return false;
+        }
+    }
+    return true;
+}
+
+
+function sodokoSolver(data) {
+  for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
+      if (data[i][j] == 0||data[i][j] == ''||data[i][j] =='0') {
+        for (let k = 1; k <= 9; k++) {
+          if (isValid(data, i, j, k)) {
+            data[i][j] = `${k}`;
+          if (sodokoSolver(data)) {
+           return true;
+          } else {
+           data[i][j] = 0;
+          }
+         }
+       }
+       return false;
+     }
+   }
+ }
+ return true;
+}
+    </script>
+</body>
+</html>
